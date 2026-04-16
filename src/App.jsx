@@ -1,1 +1,27 @@
-import React from 'react';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className="App">\n      <h1>My Portfolio</h1>\n      <p>Welcome to my portfolio website!</p>\n    </div>\n  );\n}\n\nexport default App;\n
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './styles/App.css';
+
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
